@@ -34,8 +34,16 @@ if [[ $# -ne 4 ]] ; then
 4 arguments expected...
 ...but you entered $# :(
 My disappointment is immeasurable, and my day is ruined...
-exiting with code 1"
+exiting with error code 1"
 	        exit 1
+fi
+
+# Check if file already exists
+if [ -f "$1" ]; then
+	    echo "File: $1 exists...
+use another name or I'm comming for ya kneecaps >:[
+exiting with error code 2"
+	    exit 2
 fi
 
 # Creates whateva idc ¯\_(^^)_/¯
@@ -52,7 +60,5 @@ EOF
 vim $1 +
 # ===================================================
 # End section
-
-# Nothing to see here...
-# Bye!
+exit 0
 # ===================================================
