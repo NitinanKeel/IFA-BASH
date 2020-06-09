@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#######################
+# ================================================
 # Scriptname:	mkscript.sh
 # Author:	Nitinan Keel
 # Description: 	Script for exersice 1.5
@@ -12,18 +12,19 @@
 # Change log:
 # Date  	Programmer 	Description		Version		
 # 09.06.2020 	Nitinan Keel	Script init		0.0.0.1
-########################
+# ==================================================
 
-#########################
+# ==================================================
 # Global variable section
 
 # Scripts exits on error
 set -o errexit
-#########################
+# ==================================================
 
-#########################
+# ==================================================
 # Script section
 
+# Creates whateva idc ¯\_(^^)_/¯
 cat << EOF > $1
 #!/bin/bash
 # Name		:	$1
@@ -35,3 +36,9 @@ cat << EOF > $1
 
 EOF
 vim $1 +
+# ===================================================
+# End section
+
+# Nothing to see here...
+# Bye!
+# ===================================================
