@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# ================================================
+# Scriptname:   script.template
+# Author:       Nitinan Keel
+# Description:  Lorem Ipsum
+# Conatcs:      https://github.com/Nitinankeel
+#               nitinan@nitinankeel.ch
+# Current Ver:  1.0.0.0
+#------
+# Change log:
+# Date          Programmer      Description             Version
+# ==================================================
+
+# ==================================================
+# Global variable section
+
+# Scripts exits on error
+set -o errexit
+# ==================================================
+
+# ==================================================
+# Script section
+
+# ===================================================
+# End section
+exit 0
+# ===================================================
