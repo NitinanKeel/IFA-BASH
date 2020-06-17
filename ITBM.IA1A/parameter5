@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# ================================================
+# Scriptname:   parameter5
+# Author:       Nitinan Keel
+# Description:  Outputs all parameters
+# Conatcs:      https://github.com/Nitinankeel
+#               nitinan@nitinankeel.ch
+# Current Ver:  0.0.0.1
+#------
+# Change log:
+# Date          Programmer      Description             Version
+# 18.06.2020    Nitinan Keel    Script init             0.0.0.1
+# ==================================================
+
+# ==================================================
+# Global variable section
+
+# Scripts exits on error
+set -o errexit
+# ==================================================
+
+# ==================================================
+# Script section
+
+let argumentCount=$#
+
+while [ $argumentCount -ne 0 ] do
+    echo $argumentCount
+    $argumentCount -= 1
+done
+
+# ===================================================
+# End section
+exit 0
+# ===================================================
