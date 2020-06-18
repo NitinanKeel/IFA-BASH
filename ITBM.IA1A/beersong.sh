@@ -23,8 +23,26 @@
 # ==================================================
 # Script section
 
+# Adding parameter check
+if [[ $# -ne 1 ]] ; then
+	echo "
+1 arguments expected...
+...but you entered $#
+exiting with exit code 1"
+	exit 1
+fi
+
+# Check if argument is a number
+if ! [[ $1 =~ $regex ]] ; then
+	   echo "Not a number...
+exiting with exit code 1"
+	   exit 1
+fi
+
+# Setting argument to variable
 beerNumber=$1
 
+# Loop through song
 while (( $beerNumber > 1 ))
 do
     echo "
@@ -35,6 +53,8 @@ Trink sie aus
 "
     ((--beerNumber))
 done
+
+# Last line of song
 
 echo "
 1 Flasche Bier im Kühlschrank
