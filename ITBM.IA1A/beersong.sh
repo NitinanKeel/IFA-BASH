@@ -17,21 +17,23 @@
 # Global variable section
 
 # Scripts exits on error
-set -o errexit
+#set -o errexit
 # ==================================================
 
 # ==================================================
 # Script section
 
-while (( $1 > 0 ))
+beerNumber=$1
+
+while (( $beerNumber > 1 ))
 do
-echo "
-$1 Flaschen Bier im Kühlschrank
-$1 Flaschen Bier
+    echo "
+$beerNumber Flaschen Bier im Kühlschrank
+$beerNumber Flaschen Bier
 Nimm eine raus
 Trink sie aus
 "
-shift
+    ((--beerNumber))
 done
 
 # ===================================================
