@@ -36,6 +36,14 @@ Trink sie aus
     ((--beerNumber))
 done
 
+echo "
+1 Flasche Bier im Kühlschrank
+1 Flasche Bier
+Nimm sie raus
+Trink sie aus
+Der Kühlschrank ist leer ...
+"
+
 # ===================================================
 # End section
 exit 0
